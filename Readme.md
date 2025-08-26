@@ -85,19 +85,15 @@ project-root/
 │  ├─ server.js
 │  └─ .env
 ├─ frontend/
-│  ├─ public/
 │  ├─ src/
 │  │  ├─ components/
-│  │  ├─ pages/
-│  │  ├─ context/
-│  │  ├─ hooks/
-│  │  ├─ assets/
-│  │  ├─ styles/
-│  │  ├─ App.js
-│  │  └─ index.js
-│  └─ .env
+│  │  │  ├─ styles/
+│  │  ├─ App.jsx
+│  │  ├─App.css
+│  │  ├─ Api.jsx
+│  │  └─ Main.jsx
 ├─ screenshots/
-├─ .gitignore
+├─ Demo-video/
 └─ README.md
 ```
 
