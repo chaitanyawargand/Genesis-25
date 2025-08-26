@@ -137,10 +137,10 @@ node server.js
 
 ## 🔹 Submission
 
-* **Frontend repo:** Contains React UI/UX design, responsiveness, and interactivity
-* **Backend repo:** Handles form submissions, database integration, and API routes
-* **Screenshots:** all screenshot of the website
-* ""Demo-video:""Demo video of working website.
+* **Frontend folder:** Contains React UI/UX design, responsiveness, and interactivity
+* **Backend folder:** Handles form submissions, database integration, and API routes
+* **Screenshot folder:**Screenshot of each section and each page
+* **Demo-video folder:**video of working website
 ---
 ## 🔹 License / Footer
 Made by **IIC WebOps Team**
