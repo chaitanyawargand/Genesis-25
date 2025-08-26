@@ -1,0 +1,112 @@
+/* General container styling */
+.form-container {
+  max-width: 450px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-4px);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Form layout */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Input & Textarea styling */
+.registration-form input,
+.registration-form textarea,
+.registration-form select {
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.registration-form input:focus,
+.registration-form textarea:focus,
+.registration-form select:focus {
+  border-color: #007bff;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.15);
+}
+
+/* Textarea resizing */
+.registration-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Button styling */
+button {
+  padding: 14px;
+  background: linear-gradient(135deg, #007bff, #0056d2);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056d2, #0041a8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 91, 187, 0.3);
+}
+
+/* Success/Error message */
+.message {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #444;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.message.success {
+  background: #e6f9ed;
+  color: #1e7d34;
+}
+
+.message.error {
+  background: #fcebea;
+  color: #b02a37;
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    margin: 30px 15px;
+    padding: 25px 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}

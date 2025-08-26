@@ -1,0 +1,122 @@
+.admin-container {
+  padding: 40px 20px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #0a0f2c;
+  min-height: 100vh;
+  color: #f5f5f5;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.heading p {
+  font-size: 50px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff6a00, #ff8e53, #6f86d6, #00c6ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.heading p:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 15px rgba(0, 198, 255, 0.7));
+}
+
+.admin-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.btn-export {
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-export:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  background: #1b2140;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #2b2f4a;
+  font-size: 15px;
+}
+
+.admin-table th {
+  background: #252b5c;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.admin-table tbody tr {
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.admin-table tbody tr:hover {
+  background: #2e3568;
+}
+
+.admin-table td {
+  color: #e0e0e0;
+}
+
+.idea-cell {
+  max-width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 900px) {
+  .admin-container {
+    padding: 30px 10px;
+  }
+
+  .heading p {
+    font-size: 42px;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .heading p {
+    font-size: 32px;
+  }
+}

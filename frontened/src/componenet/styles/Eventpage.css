@@ -1,0 +1,101 @@
+ .event-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100vw;
+  padding: 50px 20px;
+  perspective: 1000px;
+}
+
+.event-card {
+  position: relative;
+  border-radius: 20px;
+  width: 250px;
+  padding: 30px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #0a0f2f, #1a234a);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.1s ease-out, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+  perspective: 1000px;
+  overflow: hidden;
+}
+
+.tile {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.tile p {
+  font-size: 50px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff6a00, #ff8e53, #6f86d6, #00c6ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.tile p:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 15px rgba(0, 198, 255, 0.7));
+}
+
+.event-card:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.event-card::after {
+  content: '';
+  position: absolute;
+  top:-50%;
+  left:-50%;
+  width: 400%;
+  height:400%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.15), rgba(255,255,255,0));
+  transform: rotate(25deg) translateX(-100%);
+  transition: transform 0.7s ease;
+}
+
+.event-card:hover::after {
+  transform: rotate(25deg) translateX(100%);
+}
+
+.event-icon {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-icon {
+  transform: rotate(15deg) scale(1.2);
+}
+
+.event-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.event-desc {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .event-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

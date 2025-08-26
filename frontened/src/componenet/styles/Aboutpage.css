@@ -1,0 +1,48 @@
+.container {
+    max-width: 720px;
+    margin: 50px auto;
+    padding: 40px 35px;
+    background: linear-gradient(135deg, #0a0f2f, #1a234a);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    color: #f0f8ff;
+    text-align: center;
+    perspective: 1000px;
+    transition: transform 0.1s ease-out;
+    transform-style: preserve-3d;
+}
+.heading {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0cdcf7;
+}
+
+.paragraph {
+    font-size: 30px;
+    color: whitesmoke
+
+}
+
+.icon-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0cdcf7;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
