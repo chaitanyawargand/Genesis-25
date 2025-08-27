@@ -9,13 +9,13 @@ const Footer = () => {
         <div className="accounts">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://in.linkedin.com/company/iic-nitt" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+            <a href="https://chat.whatsapp.com/EDkRyIlEgmvFmAyWFNGcxQ?mode=ac_t" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp />
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/iic.nitt?igsh=MWZsMXlzdGU2cjhwMQ==" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
           </div>
@@ -35,3 +35,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
